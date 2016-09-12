@@ -1,0 +1,81 @@
+@font-face {
+    font-family: BravoRG; /* Гарнитура шрифта */
+    src: url(BravoRG.otf);
+}
+
+body { font-family: 'BravoRG', Geneva, Arial, Helvetica, sans-serif;}
+
+.content {position: relative; width: 1200px; height: 770px;}
+
+.header {color: #fff; background-color: #F58220;}
+
+h1 {font-size: 56px; margin: 0; padding: 0; font-weight: 100}
+h2 {font-size: 35px; font-weight: 100}
+
+.nums {position: absolute; top: 12px; left: 250px;
+    a{display: inline-block; color:#ED7D23; background-color: #fff; font-size: 35px; font-weight: bold; font-family: verdana; line-height: 37px; width: 39px; height: 39px; padding: 0; text-align: center; border-radius: 5px; text-decoration: none;
+        &:hover{background-color: #FFFF00}}}
+
+.logo {position: absolute; top: 320px; left: 380px; pointer-events: none}
+
+.svg_cont { position: relative; width: 927px; height: 502px; margin: 40px 0 0 0;}
+
+.svg_text {position: absolute; top: 0; pointer-events: none }
+
+.panel {position: absolute; top: 0; bottom: 0; right: 0; width: 241px; background-color: #D0D2D3;
+    
+    
+    @keyframes item_act {
+  from {
+   background-color: #f75c2d;
+  }
+
+  to {
+    background-color: #ccc;
+  }
+}
+
+.item_act {
+  animation-duration: 0.3s;
+  animation-name: item_act;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    animation-timing-function: linear;
+}
+    
+    
+    
+    a{display:block; font-size: 26px; color: #000; padding: 4px 3px; text-decoration: none; background: rgba(255, 114, 44, 0); transition: all 0.2s ease-in;}}
+
+
+.panel_group {padding: 15px;}
+.panel_group_green { @extend .panel_group; background-color: #009B49 }
+.panel_group_blue { @extend .panel_group; background-color: #3E70B0 }
+.panel_group_yellow { @extend .panel_group; background-color: #FED500 }
+
+
+.section_blue {fill:#4474B2}
+.section_green {fill:#00A551}
+.section_yellow {fill:#EFC203}
+
+
+@keyframes anim1 {
+  from {
+    fill: auto;
+  }
+
+  to {
+    fill: #fff;
+  }
+}
+
+.anim1 {
+  animation-duration: 0.3s;
+  animation-name: anim1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+#but2 {position: absolute; left: 5px; width: 100px; height: 100px; background-color: #e24646;}
